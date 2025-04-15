@@ -14,15 +14,19 @@ Vitest is a framework agnostic alternative to Jest.
 
 1. Initialize package.json
     - `$ npm init -y`
-2. Install Vitest
-    - `$ npm install -D vitest vite`
-    - The -D flag....
-3. Create vite.config.js
-```js
-export default {
-  test: {},
-}
+2. Install Vite & Vitest
+    - `$ npm install -D vite`
+    - `$ npm install -D vitest`
+    - The -D flag is short for --save-dev, which indicates that package is only needed for development.
+3. Add vistest script to package.json:
+```json
+  "scripts": {
+    "test": "vitest"
+  },
 ```
-
-`$ npm init install -d vitest`
+4. Create Test files
+    - For example: math.test.mjs
+5. Run Test:
+    - `$ npm run test` or
+    - `$ npx vitest`
 
